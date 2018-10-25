@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1137940710 source:d:\www\download\2cdt\2cdt\src\tzxfile.c
+	<stdio.h>
+	<stdlib.h>
+	<memory.h>
+	"tzxfile.h"
+
+991048958 d:\www\download\2cdt\2cdt\src\tzxfile.h
+	"defs.h"
+
+1014464942 d:\www\download\2cdt\2cdt\src\defs.h
+
+1280219172 source:d:\www\download\2cdt\2cdt\src\2cdt.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/io.h>
+	<io.h>
+	"defs.h"
+	"tzxfile.h"
+	"getopt.h"
+

@@ -1,0 +1,33 @@
+# Project: 2cdt
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = src/2cdt.o src/tzxfile.o $(RES)
+LINKOBJ  = src/2cdt.o src/tzxfile.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = 2cdt.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before 2cdt.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "2cdt.exe" $(LIBS)
+
+src/2cdt.o: src/2cdt.c
+	$(CC) -c src/2cdt.c -o src/2cdt.o $(CFLAGS)
+
+src/tzxfile.o: src/tzxfile.c
+	$(CC) -c src/tzxfile.c -o src/tzxfile.o $(CFLAGS)

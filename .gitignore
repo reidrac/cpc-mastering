@@ -1,0 +1,7 @@
+*.o
+*.swp
+*~
+*.cdt
+*.dsk
+*.scr
+.tags
