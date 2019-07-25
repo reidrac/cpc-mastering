@@ -5,7 +5,7 @@ using namespace std;
 
 #ifndef _MSC_VER
 #include <sys/param.h>
-#include <endian.h>
+#include <sys/types.h>
 #endif
 
 bool isBigEndian(void)
